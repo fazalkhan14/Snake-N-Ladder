@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #880bdb;
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: black;
+}
+.container{
+    width: 900px;
+    height: 499px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: inherit;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.wrapper {
+    width: 700px;
+    height: 499px;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: inherit;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.box{
+    width: 70px;
+    height: 50px;
+    float: left;
+    border: groove;
+    text-align: center;
+    font-size: 20px;
+    background-color: #b713ed;
+    font-family: 'Ranchers', cursive;
+    position: relative;
+    border: none;
+}
+.boxE{
+    width: 70px;
+    position: relative;
+    height: 50px;
+    float: left;
+    border: groove;
+    text-align: center;
+    font-size: 20px;
+    background-color: #d385ed;
+    font-family: 'Ranchers', cursive;
+    border: none;
+}
+.boxPawn{
+    height: 100%;
+    width: 100%;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.boxPawn > img {
+    width: 100%;
+    height: 100%;
+}
+.right-container{
+    width: 200px;
+    height: 499px;
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:499px;
+    background-color:#880bdb;
+    font-family: 'Ranchers', cursive;
+}
+
+.player-0-panal{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #d385ed;
+    
+}
+.player-1-panal{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #d385ed;
+}
+.player-name{
+    margin-top: 5px;
+    margin-left: 7px;
+}
+.active { background-color: #b713ed; }
+.active .player-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -15px;
+}
+#snake1{
+    width: 10%;
+    top: 19px;
+    position: absolute;
+    transform: rotateY(180deg);
+    left: 124px;
+}
+
+#snake2{
+    width: 10%;
+    top: 19px;
+    position: absolute;
+    left: 505px;
+}
+#snake5{
+    width: 10%;
+    top: 257px;
+    position: absolute;
+    left: 604px;
+    height: 188px;
+    transform: rotate(-12deg);
+}
+#snake3{
+    width: 7%;
+    top: 102px;
+    position: absolute;
+    left: 120px;
+    transform: rotate(73deg);
+    height: 217px;
+}
+#snake4{
+    width: 9%;
+    top: 41px;
+    position: absolute;
+    left: 325px;
+    height: 384px;
+    transform: rotate(32deg);
+}
+#snake6{
+    width: 10%;
+    top: 413px;
+    position: absolute;
+    left: 313px;
+    transform: rotate(-53deg);
+    height: 109px;
+}
+#snake7{
+    width: 9%;
+    top: 255px;
+    position: absolute;
+    left: 385px;
+    height: 154px;
+    transform: rotate(51deg);
+}
+#ladder1{
+    width: 9%;
+    position: absolute;
+    height: 97px;
+    top: 24px;
+}
+#ladder2{
+    width: 9%;
+    position: absolute;
+    height: 97px;
+    top: 24px;
+    left: 630px;
+}
+#ladder3{
+    width: 8%;
+    position: absolute;
+    height: 405px;
+    top: 26px;
+    left: 351px;
+    transform: rotate(-44deg);
+}
+#ladder4{
+    width: 7%;
+    position: absolute;
+    height: 194px;
+    top: 106px;
+    left: 530px;
+    transform: rotate(-75deg);
+}
+#ladder5{
+    width: 8%;
+    position: absolute;
+    height: 193px;
+    top: 298px;
+    left: 73px;
+    transform: rotate(42deg);
+}
+#ladder6{
+    width: 8%;
+    position: absolute;
+    height: 179px;
+    top: 310px;
+    left: 597px;
+    transform: rotate(26deg);
+}
+#ladder7{
+    width: 8%;
+    position: absolute;
+    top: 264px;
+    left: 40px;
+    transform: rotate(28deg);
+    height: 115px;
+}
+#BluePawn{
+    top: 85px;
+    left: 50%;
+}
+#BluePawn img{
+    width: 100%;
+    height: 100%;
+    
+}
+.pawn0{
+    height: 81px;
+    width: 87px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.pawn1{
+    height: 81px;
+    width: 87px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#RedPawn{
+    top: 85px;
+    left: 50%;
+}
+#RedPawn img{
+    width: 100%;
+    height: 100%;
+    
+}
+.dice{
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+.dice img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+button{
+    width: 95px;
+    position: absolute;
+    height: 30px;
+    background: none;
+    border: none;
+    font-family: 'Ranchers', cursive;
+    left: 88%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-new{
+    top: 91%;
+}
+.btn-roll{
+    top: 83%;
+}
+
+i{
+    margin-right: 7px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+}
+
+.winner { background-color:  #880bdb; }
+.winner .player-name { font-weight: 300; color: #EB4D4D; }
